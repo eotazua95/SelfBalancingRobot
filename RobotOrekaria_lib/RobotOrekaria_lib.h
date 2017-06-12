@@ -2,7 +2,6 @@
 #include <PID_v1.h>
 #include <IMU_lib2.h>
 #include <CF_lib3.h>
-#include <Motor_ktrl_lib.h>
 
 void LCD_init(dogm_7036* DOG, 
 			  double Kp, double Ki, double Kd, 
