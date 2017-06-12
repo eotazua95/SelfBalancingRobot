@@ -114,15 +114,6 @@ void setup() {
     aux=0;
     DOG.cursor_onoff(false);
   }
-
-  for(int i=0;i<100;i++)
-  {
-      float tiempoAnterior = tiempoActual;
-      tiempoActual = micros();
-      float tiempoPasado = (tiempoActual - tiempoAnterior);                 
-      tiempo  = tiempoPasado / 1000;                                       
-      anguloActual = Input;                                            //Angulo inicial.
-  }
   
   set_timer3_interrupt();
   set_timer4_interrupt();
