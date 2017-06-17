@@ -34,7 +34,7 @@ volatile float t3, t4;
 
 //PID KONTROLA
 double Setpoint, Input, Output;
-double Kp=300, Ki=215, Kd=213;
+double Kp=179, Ki=215, Kd=225;
 float integralSum, PID_errorSum;
 float errorAnterior, errorAnt;
 #define ITERM_MAX_ERROR 25   
@@ -96,7 +96,7 @@ void setup() {
   int* noise = imu_lib2.Get_Noise();
   cf_lib3.begin(accel);
 
-  Setpoint = 1.9;
+  Setpoint = 1.6;
   
   LCD_init(&DOG, Kp, Ki, Kd, Setpoint, Input, Output);
 
